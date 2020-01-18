@@ -175,8 +175,6 @@ def getWeightsModel(model, pathWeights=None):
       model.load_weights(pathWeights)
     else:
       model.load_weights('weights.h5')
-    loss, acc = model.evaluate(X_Test,  y_Test, verbose=2)
-    print("Точность восстановленной модели: {:5.2f}%".format(100*acc))
     return model
   except:
     print('Введите корректный путь до файла весов модели.')
