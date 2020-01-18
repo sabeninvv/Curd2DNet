@@ -1,3 +1,7 @@
+import os
+import numpy as np
+import pandas as pd
+
 def newDataFrame():
   db = pd.DataFrame(columns=['Class', 'Arr'], dtype=np.int32)
   return db
