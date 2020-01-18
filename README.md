@@ -37,3 +37,21 @@ Network for the classification of curds by foto
 - 1 этап: epochs=100, optimizer=Adam(1e-3)
 - 2 этап: epochs=50, optimizer=Adam(1e-4)
 - 3 этап: epochs=50, optimizer=Adam(1e-5)
+
+
+## Результаты:
+- val_acc: 0.9240
+- acc: 0.9985 
+- val_loss: 0.4762 
+- loss: 0.0060 
+- Confusion Matrix: All - количество, остальные данные - %
+```
+Pred 	0 	 1 	   2 	   3 	   4 	   All
+True 						
+0 	92.0 	1.0 	3.0 	1.0 	3.0 	100.0
+1 	0.0 	97.0 	0.0 	3.0 	0.0 	100.0
+2 	3.0 	1.0 	95.0 	0.0 	1.0 	100.0
+3 	1.0 	5.0 	1.0 	90.0 	3.0 	100.0
+4 	5.0 	2.0 	3.0 	2.0 	88.0 	100.0
+All 101 	106 	102 	 96 	 95 	 500
+```
