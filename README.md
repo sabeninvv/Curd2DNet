@@ -1,3 +1,4 @@
+[Пример работы на GoogleColab](https://colab.research.google.com/drive/1pNL0cq2L5R79SbELNR8hdUjvO5Y73BKz)
 # Curd2DNet
 Network for the classification of curds by foto
 
