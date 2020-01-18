@@ -1,7 +1,7 @@
 # Curd2DNet
 Network for the classification of curds by foto
 
-### Краткое описание
+## Краткое описание
 На вход сеть принимает: тензор размерности (150,150,2).
 Обработка тензора: 
 - 2 ветки Conv2D. В 1 ветке в Conv2D ядро, геометрии типа квадрат. Во 2 ветке - прямоугольник.
@@ -12,7 +12,7 @@ Network for the classification of curds by foto
 На выходе: Softmax на 5 классов
 
 
-### Архитектура сети
+## Архитектура сети
 ![Image alt](https://github.com/sabeninvv/Curd2DNet/blob/master/model_architecture.png)
 
 
@@ -32,7 +32,7 @@ Network for the classification of curds by foto
 - Нормализация данных в тензорах, делением на 255.
 
 
-### Параметры обучения
+## Параметры обучения
 - Для всех этапов: batch_size=64, loss='sparse_categorical_crossentropy', metrics=['accuracy'], фильтр по val_accuracy.
 - 1 этап: epochs=100, optimizer=Adam(1e-3)
 - 2 этап: epochs=50, optimizer=Adam(1e-4)
