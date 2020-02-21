@@ -36,7 +36,8 @@ def dataInputPreprocess(main_dirpatch, pic_in_dir = True, db = None):
         else:
           img = img.transform((img.size[1],img.size[1]), Image.AFFINE,(1, 0, 0, 0, 1, 0), Image.BILINEAR) 
         #делаем стандартизацию размеров
-        img = img.transform((150,150), Image.AFFINE,(1, 0, 0, 0, 1, 0), Image.BILINEAR)                 
+        #img = img.transform((150,150), Image.AFFINE,(1, 0, 0, 0, 1, 0), Image.BILINEAR) #опционально
+        img = img.resize((150,150))
         img = img.convert('LA')          
         img2npArr = np.array(img)
         db.loc[index_for_db] = (numClass, img2npArr)
